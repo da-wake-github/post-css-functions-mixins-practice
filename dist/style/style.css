@@ -1,0 +1,34 @@
+/* - [使いまわして楽しよう！CSSの便利mixin集 | FE-Designer](https://fe-designer.com/article/cssmixin/) */
+
+.base {
+}
+
+.base__bar {
+    color: #e53e3e;
+  }
+
+.base__baz {
+    color: white;
+    padding: calc(0.5rem / 2) 0.5rem;
+    background-color: #2467c5;
+    font-size: 0.9rem;
+    font-feature-settings: "palt";
+    letter-spacing: 0.06em;
+  }
+
+.baz {
+  background-color: #fff;
+  margin: 0.5rem 0;
+  color: #2467c5;
+}
+
+.baz::before {
+    content: "";
+    display: inline-block;
+    margin-right: 0.5rem;
+    border: 0.3rem solid transparent;
+    border-left: 0.5rem solid #2467c5;
+    border-right: none;
+    vertical-align: middle;
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zdHlsZS9taXhpbi8ubWl4aW4uY3NzIiwiLi4vLi4vc3JjL3N0eWxlLy5iYXNlLmNzcyIsIi4uLy4uL3NyYy9zdHlsZS9pbmNsdWRlL2Zvby9iYXIvLmJhei5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWUEseUZBQXlGOztBQ1p6RjtBQVVBOztBQVJFO0lBQ0UsY0FBaUI7RUFDbkI7O0FBQ0E7SUFDRSxZQUFxQjtJRFF2QixnQ0FBb0M7SUFDcEMseUJBQWtDO0lBQ2xDLGlCQUFvQjtJQUlwQiw2QkFBNkI7SUFDN0Isc0JBQThCO0VDWjlCOztBQ1RGO0VBQ0Usc0JBQXNCO0VBQ3RCLGdCQUFpQjtFQUNqQixjQUFzQjtBQUV4Qjs7QUZKRTtJQUNFLFdBQVc7SUFDWCxxQkFBcUI7SUFDckIsb0JBQXFCO0lBQ3JCLGdDQUFnQztJQUNoQyxpQ0FBaUM7SUFDakMsa0JBQWtCO0lBQ2xCLHNCQUFzQjtFQUN4QiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAZGVmaW5lLW1peGluIGljb24gJGNvbG9yIHtcbiAgJjo6YmVmb3JlIHtcbiAgICBjb250ZW50OiBcIlwiO1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBtYXJnaW4tcmlnaHQ6IHJlbSgxMCk7XG4gICAgYm9yZGVyOiByZW0oNikgc29saWQgdHJhbnNwYXJlbnQ7XG4gICAgYm9yZGVyLWxlZnQ6IHJlbSgxMCkgc29saWQgJGNvbG9yO1xuICAgIGJvcmRlci1yaWdodDogbm9uZTtcbiAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xuICB9XG59XG5cbi8qIC0gW+S9v+OBhOOBvuOCj+OBl+OBpualveOBl+OCiOOBhu+8gUNTU+OBruS+v+WIqW1peGlu6ZuGIHwgRkUtRGVzaWduZXJdKGh0dHBzOi8vZmUtZGVzaWduZXIuY29tL2FydGljbGUvY3NzbWl4aW4vKSAqL1xuQGRlZmluZS1taXhpbiBzb21lTGFiZWwgJHBhZGRpbmc6IDRweCwgJGZvbnRTaXplOiAxMnB4LCAkYmFja2dyb3VuZENvbG9yOiAjYWFhIHtcbiAgcGFkZGluZzogY2FsYygkcGFkZGluZyAvIDIpICRwYWRkaW5nO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAkYmFja2dyb3VuZENvbG9yO1xuICBmb250LXNpemU6ICRmb250U2l6ZTtcbn1cblxuQGRlZmluZS1taXhpbiBjaGFyYWN0ZXJQYWNraW5nICRsZXR0ZXJTcGFjaW5nOiAwLjA2ZW0ge1xuICBmb250LWZlYXR1cmUtc2V0dGluZ3M6IFwicGFsdFwiO1xuICBsZXR0ZXItc3BhY2luZzogJGxldHRlclNwYWNpbmc7XG59IiwiLmJhc2Uge1xuICAkYmFzZUNvbG9yOiAjZTUzZTNlO1xuICAmX19iYXIge1xuICAgIGNvbG9yOiAkYmFzZUNvbG9yO1xuICB9XG4gICZfX2JheiB7XG4gICAgY29sb3I6IGdldENvbG9yKHNub3cpO1xuICAgIEBtaXhpbiBzb21lTGFiZWwgcmVtKDEwKSwgcmVtKDE4KSwgIzI0NjdjNTtcbiAgICBAbWl4aW4gY2hhcmFjdGVyUGFja2luZztcbiAgfVxufSIsIi5iYXoge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuICBtYXJnaW46IHJlbSgxMCkgMDtcbiAgY29sb3I6IGdldENvbG9yKG9jZWFuKTtcbiAgQG1peGluIGljb24gIzI0NjdjNTtcbn0iXX0= */

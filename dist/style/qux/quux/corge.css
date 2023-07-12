@@ -1,0 +1,29 @@
+/* - [使いまわして楽しよう！CSSの便利mixin集 | FE-Designer](https://fe-designer.com/article/cssmixin/) */
+
+&__foo {
+  border-bottom: 1px solid green;
+}
+
+.corge__foo {
+    margin: 0.5rem 0;
+    color: green;
+  }
+
+.corge__foo::before {
+    content: "";
+    display: inline-block;
+    margin-right: 0.5rem;
+    border: 0.3rem solid transparent;
+    border-left: 0.5rem solid green;
+    border-right: none;
+    vertical-align: middle;
+  }
+
+.corge__bar {
+    padding: calc(4px / 2) 4px;
+    background-color: #aaa;
+    font-size: 12px;
+    font-feature-settings: "palt";
+    letter-spacing: 0.06em;
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NyYy9zdHlsZS9taXhpbi8ubWl4aW4uY3NzIiwiPG5vIHNvdXJjZT4iLCIuLi8uLi8uLi8uLi9zcmMvc3R5bGUvcXV4L3F1dXgvY29yZ2UuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVlBLHlGQUF5Rjs7QUNaekY7RUNHRSw4QkFBOEI7Q0RIaEM7O0FDT0U7SUFFRSxnQkFBaUI7SUFDakIsWUFBd0I7RUFFMUI7O0FGWEE7SUFDRSxXQUFXO0lBQ1gscUJBQXFCO0lBQ3JCLG9CQUFxQjtJQUNyQixnQ0FBZ0M7SUFDaEMsK0JBQWlDO0lBQ2pDLGtCQUFrQjtJQUNsQixzQkFBc0I7RUFDeEI7O0FFSUE7SUZDQSwwQkFBb0M7SUFDcEMsc0JBQWtDO0lBQ2xDLGVBQW9CO0lBSXBCLDZCQUE2QjtJQUM3QixzQkFBOEI7RUVMOUIiLCJmaWxlIjoiY29yZ2UuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGRlZmluZS1taXhpbiBpY29uICRjb2xvciB7XG4gICY6OmJlZm9yZSB7XG4gICAgY29udGVudDogXCJcIjtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgbWFyZ2luLXJpZ2h0OiByZW0oMTApO1xuICAgIGJvcmRlcjogcmVtKDYpIHNvbGlkIHRyYW5zcGFyZW50O1xuICAgIGJvcmRlci1sZWZ0OiByZW0oMTApIHNvbGlkICRjb2xvcjtcbiAgICBib3JkZXItcmlnaHQ6IG5vbmU7XG4gICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbiAgfVxufVxuXG4vKiAtIFvkvb/jgYTjgb7jgo/jgZfjgabmpb3jgZfjgojjgYbvvIFDU1Pjga7kvr/liKltaXhpbumbhiB8IEZFLURlc2lnbmVyXShodHRwczovL2ZlLWRlc2lnbmVyLmNvbS9hcnRpY2xlL2Nzc21peGluLykgKi9cbkBkZWZpbmUtbWl4aW4gc29tZUxhYmVsICRwYWRkaW5nOiA0cHgsICRmb250U2l6ZTogMTJweCwgJGJhY2tncm91bmRDb2xvcjogI2FhYSB7XG4gIHBhZGRpbmc6IGNhbGMoJHBhZGRpbmcgLyAyKSAkcGFkZGluZztcbiAgYmFja2dyb3VuZC1jb2xvcjogJGJhY2tncm91bmRDb2xvcjtcbiAgZm9udC1zaXplOiAkZm9udFNpemU7XG59XG5cbkBkZWZpbmUtbWl4aW4gY2hhcmFjdGVyUGFja2luZyAkbGV0dGVyU3BhY2luZzogMC4wNmVtIHtcbiAgZm9udC1mZWF0dXJlLXNldHRpbmdzOiBcInBhbHRcIjtcbiAgbGV0dGVyLXNwYWNpbmc6ICRsZXR0ZXJTcGFjaW5nO1xufSIsbnVsbCwiQGltcG9ydCBcIi4uLy4uL21peGluLy5taXhpblwiO1xuXG5AZGVmaW5lLXBsYWNlaG9sZGVyIGV4dGVuZCB7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBncmVlbjtcbn1cblxuLmNvcmdlIHtcbiAgJl9fZm9vIHtcbiAgICBAZXh0ZW5kIGV4dGVuZDtcbiAgICBtYXJnaW46IHJlbSgxMCkgMDtcbiAgICBjb2xvcjogZ2V0Q29sb3IobWF0YWRvcik7XG4gICAgQG1peGluIGljb24gZ3JlZW47XG4gIH1cbiAgJl9fYmFyIHtcbiAgICBAbWl4aW4gc29tZUxhYmVsO1xuICAgIEBtaXhpbiBjaGFyYWN0ZXJQYWNraW5nO1xuICB9XG59Il19 */
