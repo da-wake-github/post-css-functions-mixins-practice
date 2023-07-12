@@ -4,6 +4,8 @@
 
 - [サンプルページを表示](https://da-wake-github.github.io/post-css-functions-mixins-practice/)
 
+## 注意点
+
 ```js
 /*
 #################### 注意点 ###########################################
