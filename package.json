@@ -1,0 +1,27 @@
+{
+  "name": "post-css-functions-mixins-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss src/**/*.css --base src --dir dist --config postcss.config.js",
+    "watch": "postcss src/**/*.css --base src --dir dist --config postcss.config.js --watch --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.0",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "postcss-extend": "^1.0.5",
+    "postcss-extend-rule": "^4.0.0",
+    "postcss-functions": "^4.0.2",
+    "postcss-import": "^15.1.0",
+    "postcss-load-config": "^4.0.1",
+    "postcss-mixins": "^9.0.4",
+    "postcss-nested": "^6.0.1",
+    "postcss-simple-vars": "^7.0.1"
+  }
+}

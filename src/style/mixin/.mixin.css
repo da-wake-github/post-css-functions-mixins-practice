@@ -1,0 +1,23 @@
+@define-mixin icon $color {
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: rem(10);
+    border: rem(6) solid transparent;
+    border-left: rem(10) solid $color;
+    border-right: none;
+    vertical-align: middle;
+  }
+}
+
+/* - [使いまわして楽しよう！CSSの便利mixin集 | FE-Designer](https://fe-designer.com/article/cssmixin/) */
+@define-mixin someLabel $padding: 4px, $fontSize: 12px, $backgroundColor: #aaa {
+  padding: calc($padding / 2) $padding;
+  background-color: $backgroundColor;
+  font-size: $fontSize;
+}
+
+@define-mixin characterPacking $letterSpacing: 0.06em {
+  font-feature-settings: "palt";
+  letter-spacing: $letterSpacing;
+}

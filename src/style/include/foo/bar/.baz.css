@@ -1,0 +1,6 @@
+.baz {
+  background-color: #fff;
+  margin: rem(10) 0;
+  color: getColor(ocean);
+  @mixin icon #2467c5;
+}

@@ -1,0 +1,11 @@
+.base {
+  $baseColor: #e53e3e;
+  &__bar {
+    color: $baseColor;
+  }
+  &__baz {
+    color: getColor(snow);
+    @mixin someLabel rem(10), rem(18), #2467c5;
+    @mixin characterPacking;
+  }
+}

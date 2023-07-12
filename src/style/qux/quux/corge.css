@@ -1,0 +1,18 @@
+@import "../../mixin/.mixin";
+
+@define-placeholder extend {
+  border-bottom: 1px solid green;
+}
+
+.corge {
+  &__foo {
+    @extend extend;
+    margin: rem(10) 0;
+    color: getColor(matador);
+    @mixin icon green;
+  }
+  &__bar {
+    @mixin someLabel;
+    @mixin characterPacking;
+  }
+}
